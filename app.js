@@ -16,3 +16,9 @@ function agregarAmigo(){
         alert("Debe ingresar un nombre valido"); //Si el input esta vacio muestro un alert
     }
 }
+
+//Funcion para mostrar los amigos en el HTML
+function listaAmigosHtml(){
+    let lista = document.getElementById("listaAmigos");
+    lista.innerHTML = ""; //Reseteo la lista antes de mostrar los amigos
+}
