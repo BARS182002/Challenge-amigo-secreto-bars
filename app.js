@@ -35,6 +35,8 @@ function sortearAmigo () {
         let amigoSorteado = listaDeAmigos[Math.floor(Math.random() * listaDeAmigos.length)];
         let textoAmigo = document.getElementById("resultado");
         textoAmigo.innerHTML = "El amigo sorteado es: " + amigoSorteado;
+        clean = document.getElementById("listaAmigos");
+        clean.innerHTML = "";
     }
     else {
         alert("No hay suficientes amigos para sortear");
