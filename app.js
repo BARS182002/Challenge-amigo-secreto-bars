@@ -33,7 +33,7 @@ function listaAmigosHtml(){
 function sortearAmigo () {
     if (listaDeAmigos.length > 1) {
         let amigoSorteado = listaDeAmigos[Math.floor(Math.random() * listaDeAmigos.length)];
-        let textoAmigo = document.getElementById("sorteoAmigo");
+        let textoAmigo = document.getElementById("resultado");
         textoAmigo.innerHTML = "El amigo sorteado es: " + amigoSorteado;
     }
     else {
