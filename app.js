@@ -22,13 +22,12 @@ function listaAmigosHtml(){
     let lista = document.getElementById("listaAmigos");
     lista.innerHTML = ""; //Reseteo la lista antes de mostrar los amigos
 
-//Recorro la lista de amigos y los muestro en el HTML
-// for each indica "para cada amigo en la lista de amigos"
-    listaDeAmigos.forEach((amigo) => { 
+
+    for (let amigo of listaDeAmigos) {//Recorro la lista de amigos
         let nuevoNombre = document.createElement("li"); //Creo un elemento "li" siendo "nuevoNombre" en forma de lista
         nuevoNombre.textContent = amigo;  
         lista.appendChild(nuevoNombre); //Agrego el nombre a la lista 
-    });
+    }
 }
 
 function sortearAmigo () {
