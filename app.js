@@ -30,3 +30,14 @@ function listaAmigosHtml(){
         lista.appendChild(nuevoNombre); //Agrego el nombre a la lista 
     });
 }
+
+function sortearAmigo () {
+    if (listaDeAmigos.length > 1) {
+        let amigoSorteado = listaDeAmigos[Math.floor(Math.random() * listaDeAmigos.length)];
+        let textoAmigo = document.querySelector("h2");
+        textoAmigo.textContent = "El amigo sorteado es: " + amigoSorteado;
+    }
+    else {
+        alert("No hay suficientes amigos para sortear");
+    }
+}
